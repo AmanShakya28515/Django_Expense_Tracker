@@ -33,6 +33,8 @@ This project implements a RESTful API for managing personal expense and income r
 - djangorestframework-simplejwt (JWT Authentication)
 
 - SQLite (development database)
+  
+- Postman (for API testing)
 
 ## Setup Instructions
 
@@ -141,6 +143,8 @@ Content-Type: application/json
   "refresh": "refresh_token",
   "access": "access_token"
 }
+
+# Crud
 
 # CreateExpense
 POST /expenses/
