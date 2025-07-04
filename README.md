@@ -1,10 +1,10 @@
 # Django Expense Tracker API
 
-## Project Overview
+### Project Overview
 
 This project implements a RESTful API for managing personal expense and income records with secure user authentication. Users can create, view, update, and delete their own expense/income data, while superusers have access to all users' records. The API also includes automatic tax calculation (flat or percentage) and supports paginated responses.
 
-## Features
+### Features
 
 - User registration and JWT-based authentication (login, token refresh)
 
@@ -22,7 +22,7 @@ This project implements a RESTful API for managing personal expense and income r
 
 - Clear API response formats for single and list records
 
-# Technologies Used
+### Technologies Used
 
 - Python 3.8+
 
@@ -36,7 +36,7 @@ This project implements a RESTful API for managing personal expense and income r
   
 - Postman (for API testing)
 
-## Setup Instructions
+### Setup Instructions
 
 - Python 3.8 or higher installed
 
@@ -59,7 +59,7 @@ This project implements a RESTful API for managing personal expense and income r
 
 =====================
 
-## API Endpoints
+### API Endpoints
 
 ### Authentication
 
@@ -117,7 +117,7 @@ This project implements a RESTful API for managing personal expense and income r
 - **DELETE** `/expenses/{id}/`  
   Delete a specific record by ID.
 
-  ## Example Usage
+  ### Example Usage
 
 ### Register User
 
