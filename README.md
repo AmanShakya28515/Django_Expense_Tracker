@@ -51,7 +51,7 @@ This project implements a RESTful API for managing personal expense and income r
 2. Create and activate a virtual environment <== Very essential
 
 3. Install dependencies
-   pip install -r requirements.txt
+   pip install -r requirement.txt
 
 4. Apply migrations
 
@@ -105,6 +105,8 @@ Value: Bearer <your_access_token> and soo on...
   "tax": 10,
   "tax_type": "flat"
 }
+
+============================
 
 ### API Endpoints
 
