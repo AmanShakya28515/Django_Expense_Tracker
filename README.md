@@ -138,14 +138,14 @@ Content-Type: application/json
   "password": "testpass123"
 }
 
-# Response
+### Response
 {
   "refresh": "refresh_token",
   "access": "access_token"
 }
 
 ### Crud 
-# CreateExpense
+### CreateExpense
 POST /expenses/
 
 {
@@ -157,7 +157,7 @@ POST /expenses/
   "tax_type": "flat"
 }
 
-# list expenses  ====> Paginated API responses , these are the data from the database 
+### list expenses  ====> Paginated API responses , these are the data from the database 
 GET /expenses/?page=1'
 
 {
@@ -208,7 +208,7 @@ GET /expenses/?page=1'
   ]
 }
 
-# UpdateExpense
+### UpdateExpense
 PUT /expenses/1/
 
 {
@@ -220,11 +220,11 @@ PUT /expenses/1/
   "tax_type": "flat"
 }
 
-# DeletExpense
+### DeletExpense
 
 DELETE /expenses/1/
 
-## In conclusion i have added the expected API Response Format and paginated data which have been added in upper code in list expenses
+### In conclusion i have added the expected API Response Format and paginated data which have been added in upper code in list expenses
 
 {
   "id": 4,
