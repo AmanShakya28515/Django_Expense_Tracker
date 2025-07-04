@@ -59,7 +59,7 @@ This project implements a RESTful API for managing personal expense and income r
 
 =====================
 ### Using Postman to Test the API
-Step 1: Register a User (No Auth Needed)
+#### Step 1: Register a User (No Auth Needed)
 Method: POST
 
 URL: http://127.0.0.1:8000/auth/register/
@@ -70,7 +70,7 @@ Body (raw JSON):
   "password": "oenpass3"
 }
 
-Step 2: Login to Get Access Token
+#### Step 2: Login to Get Access Token
 Method: POST
 
 URL: http://127.0.0.1:8000/auth/login/
@@ -81,13 +81,13 @@ Body (raw JSON):
   "password": "oenpass3"
 }
 
-Step 3: Use Access Token in Authorization Header
+#### Step 3: Use Access Token in Authorization Header
 For all authenticated endpoints, add this header in Postman:
 
 Key	Value
 Authorization	Bearer <your_access_token>
 
-Step 4: Create a New Expense (Authenticated)
+#### Step 4: Create a New Expense (Authenticated)
 Method: POST
 
 URL: http://127.0.0.1:8000/expenses/
