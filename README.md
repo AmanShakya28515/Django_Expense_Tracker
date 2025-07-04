@@ -48,7 +48,7 @@ This project implements a RESTful API for managing personal expense and income r
 
 1. Clone the repository
 
-2. Create and activate a virtual environment
+2. Create and activate a virtual environment <== Very essential
 
 3. Install dependencies
    pip install -r requirements.txt
@@ -58,6 +58,53 @@ This project implements a RESTful API for managing personal expense and income r
 5. Run the development server
 
 =====================
+### Using Postman to Test the API
+Step 1: Register a User (No Auth Needed)
+Method: POST
+
+URL: http://127.0.0.1:8000/auth/register/
+
+Body (raw JSON):
+{
+  "username": "userone",
+  "password": "oenpass3"
+}
+
+Step 2: Login to Get Access Token
+Method: POST
+
+URL: http://127.0.0.1:8000/auth/login/
+
+Body (raw JSON):
+{
+  "username": "userone",
+  "password": "oenpass3"
+}
+
+Step 3: Use Access Token in Authorization Header
+For all authenticated endpoints, add this header in Postman:
+
+Key	Value
+Authorization	Bearer <your_access_token>
+
+Step 4: Create a New Expense (Authenticated)
+Method: POST
+
+URL: http://127.0.0.1:8000/expenses/
+
+Headers:
+
+Key: Authorization
+
+Value: Bearer <your_access_token> and soo on...
+{
+  "title": "Grocery Shopping",
+  "amount": 100,
+  "description": "Weekly groceries",
+  "transaction_type": "debit",
+  "tax": 10,
+  "tax_type": "flat"
+}
 
 ### API Endpoints
 
